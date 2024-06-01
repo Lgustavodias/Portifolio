@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family:   'Open Sans', 'Helvetica Neue', sans-serif;
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
 .main{
@@ -11,7 +11,7 @@
 }
 
 body{
-    background: linear-gradient(135deg, #2980b9, #6dd5fa, #000, #276c85, #2980b9);
+    background: linear-gradient(135deg, #764BA2   , #6dd5fa, #000, #276c85, #667EEA);
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
     color: white;
