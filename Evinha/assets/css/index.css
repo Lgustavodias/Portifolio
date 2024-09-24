@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Look Out';
+  src: url('./fonts/look-out/Look Out.woff2') format('woff2'),
+       url('./fonts/look-out/Look Out.woff') format('woff'),
+       url('./fonts/look-out/Look Out.otf') format('opentype');
+}
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: rgb(173, 216, 230); 
+  }
+  50% {
+    background-color: rgb(255, 192, 203); 
+  }
+  100% {
+    background-color: rgb(173, 216, 230); 
+  }
+}
+body{
+  animation: changeBackgroundColor 5s infinite;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0px;
+  font-family:'Look Out' ;
+
+}
+
+.love{
+  display: none;
+}
+
+.Aperte{
+  display: flex; /* Adicionado para ajustar o conteúdo interno */
+  justify-content: center; /* Centraliza o texto dentro do botão */
+  align-items: center;
+  color: blueviolet;
+  background: #000000DA;
+  border-radius: 20%;
+  height: 200px;
+  width: 200px;
+  text-transform: uppercase;
+  font-size: 24px; 
+  font-family:'Look Out' ;
+  margin: 50px auto;
+}
+
+.img{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.caixa{
+  animation: caixaCrescendo 0.5s linear;
+  animation-fill-mode: forwards;
+  background-color: black;
+  display: none;
+}
+
+
+@keyframes caixaCrescendo {
+  10%{
+    width: 0px;
+    height: 0px;
+    border:0px solid rgb(9, 8, 10)
+  }
+  50%{
+    width: 300px;
+    height: 450px;
+    border:2,5px solid rgb(9, 8, 10)
+  }
+  100%{
+    width: 600px;
+    height: 600px;
+    border:5px solid rgb(9, 8, 10)
+  }
+}

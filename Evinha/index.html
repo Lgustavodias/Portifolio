@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evinha</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <audio id="myAudio">
+      <source src="./assets/css/mp3/videoplayback.m4a" type="audio/mpeg" />
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <h1 class="inicio">Olá Evinha, seja bem-vinda</h1>
+    <h1 class="love">Te Amo, mil milhões</h1>
+    <div id="image-container" class="caixa">
+      <img class="img" src="./assets/css/Img/Imagem do WhatsApp de 2024-09-20 à(s) 17.34.38_110dbac0.jpg" alt="amor" />
+    </div>
+    <button class="Aperte" onclick="showImage()">Aperte aqui</button>
+
+    <script>
+      function showImage() {
+        document.getElementById("image-container").style.display = "block";
+        document.getElementsByClassName("Aperte")[0].style.display = "none";
+        document.getElementsByClassName("inicio")[0].style.display = "none";
+        document.getElementsByClassName("love")[0].style.display = "block";
+        var audio = document.getElementById("myAudio");
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
